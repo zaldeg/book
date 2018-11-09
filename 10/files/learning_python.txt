@@ -1,0 +1,4 @@
+In Python you can read files.
+In Python you can make lists.
+In Python you can do what ever you want.
+In Python you can create random numbers.

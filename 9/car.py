@@ -23,3 +23,26 @@ class Car:
 
     def increment_odometer(self, miles):
         self.odometer_reading += miles
+
+
+'''Simple model of Battery'''
+
+
+class Battery:
+    def __init__(self, battery_size=60):
+        self.battery_size = battery_size
+
+    def describe_battery(self):
+        print('This car has a ' + str(self.battery_size) + 'kW/h battery.')
+
+    def get_range(self):
+        print('Range which can go this car is', self.battery_size * 3, 'miles')
+
+
+"""Subclass ElectricCar for class Car"""
+
+
+class ElectricCar(Car):
+    def __init__(self, make, model, year):
+        super().__init__(make, model, year)
+        self.battery = Battery()
